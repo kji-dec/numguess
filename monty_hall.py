@@ -1,6 +1,7 @@
 from random import shuffle, choice
 
-simul = 1000
+
+simul = int(input("Enter some num (100 - 10000) to simulate: "))
 
 door = [0, 0, 1]
 result_win = {"changed": 0, "not_changed": 0}
