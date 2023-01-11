@@ -16,3 +16,8 @@ for _ in range(simul):
     # user didn't change choice
     if user_choice == 1:
         result_win["not_changed"] += 1
+
+print(f"""{simul} times of simulation
+    you won {result_win["changed"]} times when you changed your choice. ({result_win["changed"] / simul}%)
+    you won {result_win["not_changed"]} times when you didn't changed your choice. ({result_win["not_changed"] / simul}%)
+    """)
