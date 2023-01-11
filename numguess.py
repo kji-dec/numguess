@@ -2,31 +2,28 @@ from random import randint
 from time import sleep
 
 
-def gen_answer(start, end):
+def gen_answer(start, end) -> int:
     # Generate random number
     answer = randint(start, end + 1)
 
-    print(answer)
+    return answer
 
 def get_user() -> str:
     # Get user name
-    user = input("What\'s your name?\n")
+    user = input("What's your name?\n")
 
     # Say hello to user
     print(f"Hello, {user}!")
 
     return user
 
-def guess_number() -> int:
+def game(answer):
     # Get user's guessing number
     guess = int(input("Guess random number(1-100) : "))
 
     # Print user's guess
     print(f"You guessed {guess} as random number!")
 
-    return guess
-
-def judge(guess, answer):
     # Compare answer with user's guess
     if guess == answer:
         print("**************************")
@@ -44,6 +41,7 @@ def judge(guess, answer):
 
 def main():
     pass
+
 
 if __name__ == "__main__":
     main()
